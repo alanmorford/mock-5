@@ -3,9 +3,8 @@ import XCTest
 
 final class mock_5Tests: XCTestCase {
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(mock_5().text, "Hello, World!")
+        //let fileURL = Bundle.module.url(forResource: "Order_ID_73936_GetCartByID_Response", withExtension: "json")
+        let fileURL = mock_5.bundleURL(forResource: "Order_ID_73936_GetCartByID_Response",withExtension: "json")
+        XCTAssertNotNil(fileURL)
     }
 }
